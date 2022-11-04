@@ -18,22 +18,32 @@
     <body>
         <div class="container">
             <div class="header">
-                <label for="search-bar"><span class="material-icons">search</span></label>                
-                <input type="text" class="search-bar" id="search-bar" name="search-input">
+                <div class="header-top-cont">
+                    <div class="searchbar-cont">
+                        <label for="search-bar"><span class="material-icons icon">search</span></label>
+                        <input type="text" class="search-bar" id="search-bar" name="search-input">
+                    </div>
+                    <span class="material-icons md-24 icon">notifications_active</span>
+                    <div class="header-profile-card">
+                        <img src="./assets/images/avatar-svgrepo-com.svg" alt="small cartoonish avatar" class="header-avatar-alt"> <!-- avatar next to user name -->
+                        <h2>Morgan Oakley</h2>
+                    </div>
+                </div>
 
-                <span class="material-icons">notifications_active</span>                
-                <img src="" alt="avatar"> <!-- avatar next to user name -->
-                <h2>User Name</h2>
-
-                <img src="" alt="bigger avatar"> <!-- bigger avatar in second column -->
-                <h3>Hi there,</h3>
-                <h2>User Name (@username)</h2>
-
-                <ul>
-                    <li><button>New</button></li>
-                    <li><button>Upload</button></li>
-                    <li><button>Share</button></li>
-                </ul>
+                <div class="header-bottom-cont">
+                    <div class="header-greeting-cont">
+                        <img src="./assets/images/avatar-svgrepo-com.svg" alt="big cartoonish avatar" class="header-avatar-main"> <!-- bigger avatar in second column -->
+                        <div class="header-greeting-names">
+                            <h4>Hi there,</h4>
+                            <h2>Morgan Oakley (@morgannn)</h2>
+                        </div>
+                    </div>
+                    <div class="header-button-cont">
+                        <button>New</button>
+                        <button>Upload</button>
+                        <button>Share</button>
+                    </div>
+                </div>
 
             </div>
 
@@ -84,7 +94,7 @@
 
                 <br>
 
-                <span class="material-icons md-24 icon" >home</span>
+                <span class="material-icons md-24 icon">home</span>
                 <h2 class="icon-name">Home</h2>
                 <span class="material-icons md-24 icon">person</span>
                 <h2 class="icon-name">Profile</h2>

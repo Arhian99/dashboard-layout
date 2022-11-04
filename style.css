@@ -34,7 +34,115 @@ revise/ see reaction of 100 vw designation for the max value in second column cl
 
 .header {
     grid-area: 1 / 2 / 2 / 3;
+    display: grid;
+    grid-template: repeat(2, min-content) / auto;
+    height: min-content;
+    width: auto;
 }
+
+.header-top-cont{
+    padding: 10px 40px 10px 20px;
+    display: grid;
+    grid-template: min-content/ max-content auto max-content;
+    align-items: center;
+    width: inherit;
+
+}
+
+.header-top-cont > .icon {
+    justify-self: end;
+}
+
+.header-profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: max-content;
+    height: min-content;
+    font-weight: 500;
+
+   justify-self: end;
+}
+
+.header-profile-card img {
+    padding: 0 20px 0 20px;
+}
+
+.searchbar-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: min-content;
+    width: max-content;
+}
+
+.searchbar-cont label {
+    padding: 0 20px 0 0;
+}
+
+.searchbar-cont input {
+    border-radius: 25px;
+    border: 0px solid white;
+    height: 20px;
+    background-color: #e2e8f0;
+    padding: 5px 5px 5px 10px;
+    width: max(150px, 40vw);
+}
+
+.header-bottom-cont {
+    width: inherit;
+
+    padding: 10px 40px 30px 20px;
+
+    display: grid;
+    grid-template: min-content/ auto min-content;
+    align-items: center;
+}
+
+.header-avatar-main {
+    width: 80px;
+    height: 80px;
+}
+
+.header-avatar-alt {
+    width: 40px;
+    height: 40px;
+}
+
+.header-greeting-cont {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.header-greeting-cont img {
+    padding-right: 20px;
+}
+
+.header-bottom-cont button {
+    font-family: 'Roboto', sans-serif;
+    padding: 10px 25px;
+    border: 0px solid white;
+    border-radius: 25px;
+    font-size: 18px;
+    background-color: #6063fa;
+    color: white;
+
+}
+
+.header-button-cont {
+    justify-self: end;
+
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+}
+/* sidebar stuff*/
+
+
+
 
 .sidebar-left {
     background-color: #6063fa;
@@ -52,6 +160,8 @@ revise/ see reaction of 100 vw designation for the max value in second column cl
     column-gap: 5%;
 }
 
+
+
 .icon {
     border-radius: 50%;
     width: min-content;
@@ -60,8 +170,11 @@ revise/ see reaction of 100 vw designation for the max value in second column cl
     cursor: pointer;
 
     box-sizing: border-box;
-    justify-self: center;
+}
+
+.sidebar-left > .icon {
     grid-column: 1 /2;
+    justify-self: center;
 }
 
 .icon-name {
@@ -91,6 +204,6 @@ ul {
 
 .content-area {
     grid-area: 2 / 2 / 3 / 3;
-    background-color: #eff6ff8f;
+    background-color: #e2e8f0;
     box-shadow: inset 0px 5px 9px -5px #bdc2c9;
 }
