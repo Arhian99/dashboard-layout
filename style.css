@@ -109,6 +109,7 @@ revise/ see reaction of 100 vw designation for the max value in second column cl
 .header-avatar-alt {
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 
 .header-greeting-cont {
@@ -129,6 +130,7 @@ revise/ see reaction of 100 vw designation for the max value in second column cl
     font-size: 18px;
     background-color: #6063fa;
     color: white;
+    cursor: pointer;
 
 }
 
@@ -139,10 +141,13 @@ revise/ see reaction of 100 vw designation for the max value in second column cl
     justify-content: flex-end;
     gap: 25px;
 }
+
+
+
 /* sidebar stuff*/
-
-
-
+/* sidebar stuff*/
+/* sidebar stuff*/
+/* sidebar stuff*/
 
 .sidebar-left {
     background-color: #6063fa;
@@ -160,7 +165,9 @@ revise/ see reaction of 100 vw designation for the max value in second column cl
     column-gap: 5%;
 }
 
-
+.sidebar-left:hover {
+    width: 250px;
+}
 
 .icon {
     border-radius: 50%;
@@ -202,8 +209,177 @@ ul {
 }
 
 
+
+
+
+/* content area stuff */
+/* content area stuff */
+/* content area stuff */
+/* content area stuff */
+
 .content-area {
     grid-area: 2 / 2 / 3 / 3;
     background-color: #e2e8f0;
     box-shadow: inset 0px 5px 9px -5px #bdc2c9;
+}
+
+.card {
+
+    width: max(200px, 25vw);
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 3px 6px 9px 0px #999da3;
+    padding: 30px 10px 20px 15px;
+    border-left: 6px solid #f0b429;
+    background-color: white;
+    cursor: pointer;
+
+}
+
+.card h2 {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card p {
+    color: #636363;
+}
+
+.card-icons-cont {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 30px 10px 10px 0;
+    color: #636363;
+}
+
+
+
+/* Announcement stuff */
+/* Announcement stuff */
+/* Announcement stuff */
+/* Announcement stuff */
+
+.announcement-cont {    
+    width: 300px; /* subject to change */
+    height: min-content;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 3px 6px 9px 0px #999da3;
+}
+
+.announcement {
+    padding: 20px 0;
+    border-bottom: 1px solid #63636365;
+    cursor: pointer;
+}
+
+.announcement p {
+    color: #636363;
+    padding-top: 5px;
+}
+
+.announcement:last-child {
+    border: 0px solid white;
+}
+
+
+
+/* Trending Stuff */
+/* Trending Stuff */
+/* Trending Stuff */
+/* Trending Stuff */
+
+.trending-cont {
+    width: 300px; /* subject to change, must match announcement-cont width */
+    height: min-content;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 3px 6px 9px 0px #999da3;
+    padding: 30px 20px;
+    display: grid;
+    grid-template: repeat(4, 1fr) / min-content auto;
+    align-items: center;
+    gap: 25px 20px;
+}
+
+.trending-avatar {
+    height: 60px;
+    width: 60px;
+    grid-column: 1 / 2;
+    cursor: pointer;
+}
+
+.trending-cont > div {
+    grid-column: 2 / 3;
+    cursor: pointer;
+}
+
+.trending-cont > div h6 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.trending-cont > div p {
+    color: #636363;
+    padding-top: 5px;
+}
+
+
+/* content area grid/layout stuff */
+/* content area grid/layout stuff */
+/* content area grid/layout stuff */
+/* content area grid/layout stuff */
+
+
+
+.content-area {
+    padding: 30px 30px 40px 20px;
+    display: grid;
+    grid-template: repeat(4, min-content) / auto min-content;
+    column-gap: 20px;
+}
+
+#yourProject-name {
+    grid-column-start: 1;
+    grid-row: 1 /2;
+    margin-bottom: 10px;
+
+}
+
+#announcement-name {
+    grid-area: 1 / -2 / 2 / -1;
+    margin-bottom: 10px;
+}
+
+.announcement-cont {
+    grid-row-start: 2;
+    grid-column: -2 / -1;
+    margin-bottom: 40px;
+}
+
+#trending-name {
+    grid-area: 3 / -2/ 4 / -1;
+    height: min-content;
+    margin-bottom: 10px;
+
+}
+
+
+.trending-cont {
+    grid-row-start: 4;
+    grid-column: -2 / -1;
+}
+
+.cards {
+    grid-column-start: 1;
+    grid-row: 2 / -1 ;
+    display: grid;
+    grid-template: repeat(3, min-content) / repeat(2, min-content);
+    gap: 20px;
+    align-items: start;
+    justify-items: start;
+    height: auto;
+    width: auto;
 }
