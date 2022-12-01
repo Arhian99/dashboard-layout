@@ -2,4 +2,5 @@
 Admin dashboard layout
 
 
-LIVE DEMO: https://raw.githack.com/Arhian99/dashboard-layout/main/index.html
+LIVE DEMO: https://arhian99.github.io/dashboard-layout/
+
